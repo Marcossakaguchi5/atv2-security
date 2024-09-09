@@ -1,0 +1,10 @@
+@baseUrl = https://8080-marcossakag-atv2securit-54nncspowt0.ws-us116.gitpod.io
+
+###
+POST {{baseUrl}}/auth
+Content-Type: application/json
+
+{
+    "nomeDeUsuario": "alfredo",
+    "senha": "ovao"
+}

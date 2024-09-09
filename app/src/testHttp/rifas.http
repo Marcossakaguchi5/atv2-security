@@ -1,0 +1,38 @@
+@baseUrl = https://8080-marcossakag-atv2securit-54nncspowt0.ws-us116.gitpod.io
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgVGFyZWZhcyIsInN1YiI6ImFsZnJlZG8iLCJleHAiOjE3MjU5MjI0MDZ9.wwEUwyqGp6Lt8pyHM0793eATUTwpLvZRDGkOHzeqeNY
+###
+GET {{baseUrl}}/rifas
+Authorization: Bearer {{token}}
+
+###
+
+POST {{baseUrl}}/rifas
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "cb500",
+    "value": 8000,
+    "vendido": false
+}
+
+
+###
+GET {{baseUrl}}/rifas/1
+Authorization: Bearer {{token}}
+
+###
+PUT {{baseUrl}}/rifas/4
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "name": "mt-07",
+    "value": 30000,
+    "vendido": true
+}
+
+
+###
+DELETE {{baseUrl}}/rifas/4
+Authorization: Bearer {{token}}
